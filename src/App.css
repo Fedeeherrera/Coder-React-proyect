@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
+.logoImg {
+  width: 8rem;
+  height: 7rem;
+  padding-left: 1rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navBottoms {
+  width: 18rem;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding-right: 2rem;
 }
 
-.App-link {
-  color: #61dafb;
+.nav__bar {
+  background: rgb(57, 57, 150);
+  background: linear-gradient(
+    90deg,
+    rgb(94, 122, 122) 0%,
+    rgba(0, 212, 255, 1) 52%,
+    rgba(57, 57, 150, 1) 100%
+  );
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navBottoms {
+  width: 700px;
+  margin-right: 70px;
+}
+
+.cart__icon,
+.numberIcons,
+.circle__icon {
+  font-size: 50px;
+}
+
+button {
+  padding: 5px;
+  font-size: 1.3rem;
+}
+
+.cart__icon {
+  width: 90px;
+  height: 90px;
+}
+
+.circle__icon {
+  width: 36px;
+  height: 36px;
+  color: #ffffff;
+  position: absolute;
+  right: 122px;
+  top: 22px;
+}
+
+.numberIcons {
+  position: absolute;
+  color: red;
+  right: 130px;
+  top: 12px;
+  font-size: 34px;
+}
+
+.navbar__h1 {
+  text-align: center;
+  align-self: center;
+}
+
+.ListContainer__h1 {
+  color: red;
+  text-align: center;
+  background-color: turquoise;
 }
