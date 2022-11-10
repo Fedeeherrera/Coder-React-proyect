@@ -1,3 +1,11 @@
+:root {
+  --color1: #283044;
+  --color2: #78A1BB;
+  --color3: #EBF5EE;
+  --color4: #BFA89E;
+  --color5: #8B786D;
+}
+
 .logoImg {
   width: 8rem;
   height: 7rem;
@@ -13,12 +21,11 @@
 }
 
 .nav__bar {
-  background: rgb(57, 57, 150);
   background: linear-gradient(
     90deg,
-    rgb(94, 122, 122) 0%,
-    rgba(0, 212, 255, 1) 52%,
-    rgba(57, 57, 150, 1) 100%
+    rgb(53, 164, 212 ) 0%,
+    rgba(57, 94, 133) 52%,
+    rgb(9, 60, 102 ) 100%
   );
 }
 
@@ -55,9 +62,10 @@ button {
 .numberIcons {
   position: absolute;
   color: red;
-  right: 130px;
-  top: 12px;
-  font-size: 34px;
+  right: 132px;
+  top: 18px;
+  font-size: 26px;
+  font-weight: 600;
 }
 
 .navbar__h1 {
@@ -65,8 +73,8 @@ button {
   align-self: center;
 }
 
-.ListContainer__h1 {
+.ItemListContainer__h1 {
   color: red;
   text-align: center;
-  background-color: turquoise;
+  background-color: var(--color1);
 }

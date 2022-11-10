@@ -1,7 +1,7 @@
-import Button from "./Button.js";
-import Logo from "./Logo";
-import logo from "../../src/images/logo.jpg";
-import CartWidget from "./CartWidget";
+import Button from "../container/Button.js";
+import Logo from "../container/Logo";
+import logo from "../images/logo.jpg";
+import CartWidget from "../container/CartWidget";
 
 function NavBar() {
   return (
@@ -12,9 +12,10 @@ function NavBar() {
         </div>
         <h1 className="navbar__h1">HeartBreaker Commerce</h1>
         <div className="navBottoms">
-          <Button msg="SHOP" />
-          <Button msg="ABOUT US" />
-          <Button msg="CART" />
+          <Button msg="REMERAS" />
+          <Button msg="BUZOS" />
+          <Button msg="PANTALONES" />
+          <Button msg="ZAPATILLAS" />
           <CartWidget />
         </div>
       </div>
