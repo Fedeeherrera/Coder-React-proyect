@@ -1,3 +1,12 @@
+export const getProduct = (id) => {
+    return new Promise((resolve) => {
+        const prod = products.find(p => p.id === parseInt(id))
+        setTimeout(() => {
+            resolve(prod)
+        }, 1000)
+    })
+  }
+
 const products = [
 
   /* Categorias= 

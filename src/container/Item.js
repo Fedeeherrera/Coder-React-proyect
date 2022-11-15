@@ -10,7 +10,7 @@ const Item = (props, id) => {
         <img src={props.imagen} alt="" />
         <h4> Stock: {props.stock}</h4>
         <h4> Categoria: {props.category}</h4>
-        <Link to= {`item/${id}`}><Button msg = 'Ver Mas'></Button></Link>
+        <Link to= {`item/${props.id}`}><Button msg = 'Ver Mas'></Button></Link>
 
 
     </div>
