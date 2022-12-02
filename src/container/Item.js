@@ -1,20 +1,22 @@
-import React from 'react'
-import Button from './Button'
-import {Link} from 'react-router-dom'
+import React from "react";
+import Button from "./Button";
+import { Link } from "react-router-dom";
 
-const Item = (props, id) => { 
+const Item = (props, id) => {
   return (
-    <div>
+
+      <div className="card ">
         <h3>{props.nombre}</h3>
         <h4> ID: {props.id}</h4>
-        <img src={props.imagen} alt="" />
+        <img className="card-img-top" src={props.imagen} alt="" />
         <h4> Stock: {props.stock}</h4>
         <h4> Categoria: {props.category}</h4>
-        <Link to= {`item/${props.id}`}><Button msg = 'Ver Mas'></Button></Link>
+        <Link to={`/item/${props.id}`}>
+          <Button msg="Ver Mas"></Button>
+        </Link>
+      </div>
 
+  );
+};
 
-    </div>
-  )
-}
-
-export default Item
+export default Item;

@@ -1,12 +1,12 @@
 import React from 'react'
-import {itemDetailContainer} from '../container/itemDetailContainer'
+import ItemDetailContainer from '../components/ItemDetailContainer'
 
-const itemDetail = (props, id) => { 
+const itemDetail = (props) => { 
   return (
     <div>
-      <itemDetailContainer/>
+            <ItemDetailContainer nombre = {props.nombre} id = {props.id}/>
     </div>
   )
 }
 
-export default itemDetail
+export default itemDetail;

@@ -24,17 +24,18 @@ const ItemListContainer = () => {
   }, [idCategory]);
 
   return (
-    <>
+    <div className="div__container__list">
       {datos.map((item) => (
         <Item
           nombre={item.nombre}
+          key = {item.id}
           id={item.id}
           imagen={item.imagen}
           stock={item.stock}
           category={item.category}
         />
       ))}
-    </>
+    </div>
   );
 };
 
