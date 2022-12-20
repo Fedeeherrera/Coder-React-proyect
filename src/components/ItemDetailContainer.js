@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { getProduct } from "../utilities/products";
 import { useParams } from "react-router-dom";
+import Counter from './Counter'
 
 const ItemDetailContainer = (props) => {
   const [product, setProduct] = useState({});
@@ -23,6 +24,7 @@ const ItemDetailContainer = (props) => {
         <div className="item__card2">
           <h4> Stock: {product.stock}</h4>
           <h4> Categoria: {product.category}</h4>
+          <Counter/>
         </div>
       </div>
     </>

@@ -17,11 +17,10 @@ function NavBar() {
           <Link to="/category/20"> <Button msg="BUZOS"></Button> </Link>
           <Link to="/category/30"> <Button msg="PANTALONES"></Button> </Link>
           <Link to="/category/40"> <Button msg="ZAPATILLAS"></Button> </Link>
+          <Link to="/Cart"> <CartWidget className = "Carrito__logo"></CartWidget> </Link>
           
           
           
-          
-          <CartWidget />
         </div>
       </div>
     </>
