@@ -1,13 +1,9 @@
 import {useState} from 'react'
-import addToCart from './CartContext'
 
 const Counter = () => {
 
     const [contador, setContador] = useState(0)
-
-    const onAdd = () => {
-        addToCart()
-    }
+    
 
     const sumar = () => {
         setContador(contador + 1)

@@ -5,11 +5,9 @@ export const CartContext = createContext()
 
 const CartContextProvider = (props) => {
 
-    const [cartList, setCartList] = useState([])
+    const [cartList] = useState([])
 
-    const addToCart = (item) => {
-        setCartList(item)
-    }
+
 
     return (
         <CartContext.Provider value = {cartList}>
